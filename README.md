@@ -1,5 +1,5 @@
-# alexflipnote.dev
-- Site: https://alexflipnote.dev
+# chisenoa.github.io
+- Site: https://chisenoa.github.io
 - Usage: Information about myself
 
 This site proudly uses [ModestaCSS](https://github.com/AlexFlipnote/ModestaCSS) (since I made it, lol)
