@@ -3145,8 +3145,22 @@ button.youtube {
   -o-transition: filter 350ms ease
 }
 
+.btn.purple-dropshadow, input[type="submit"].purple-dropshadow {
+  background-color: #9866ff;
+  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6));
+  transition: filter 350ms ease;
+  -webkit-transition: filter 350ms ease;
+  -ms-transition: filter 350ms ease;
+  -moz-transition: filter 350ms ease;
+  -o-transition: filter 350ms ease
+}
+
 .btn.sun-flower-dropshadow:hover, input[type="submit"].sun-flower-dropshadow:hover {
   filter: drop-shadow(5px 5px 0 rgba(241, 196, 15, 0.6)) brightness(50%)
+}
+
+.btn.purple-dropshadow:hover, input[type="submit"].purple-dropshadow:hover {
+  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6)) brightness(50%)
 }
 
 .btn.sun-flower-border, input[type="submit"].sun-flower-border {
@@ -7688,6 +7702,11 @@ button.youtube {
 .sun-flower-dropshadow {
   background-color: #f1c40f;
   filter: drop-shadow(5px 5px 0 rgba(241, 196, 15, 0.6))
+}
+
+.purple-dropshadow {
+  background-color: #9866ff;
+  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6))
 }
 
 .sun-flower-paper {
