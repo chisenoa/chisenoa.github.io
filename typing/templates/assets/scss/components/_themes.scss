@@ -1,0 +1,96 @@
+$themes: (
+  dark-theme: dark-theme,
+  light-theme: light-theme
+);
+
+@function set-style($map, $object, $style) {
+  @return map-get(map-get($map, $object), $style);
+}
+
+$config: (
+  dark-theme: (
+    highlight: $dark-highlight,
+    primary: $dark-primary,
+    secondary: $dark-secondary,
+    text-primary: $dark-text-primary,
+    text-secondary: $dark-text-secondary,
+    overlay: $dark-overlay,
+    logo: $dark-logo
+  ),
+  light-theme: (
+    highlight: $light-highlight,
+    primary: $light-primary,
+    secondary: $light-secondary,
+    text-primary: $light-text-primary,
+    text-secondary: $light-text-secondary,
+    overlay: $light-overlay,
+    logo: $light-logo
+  )
+);
+
+@each $key, $value in $themes {
+  .#{$value} {
+    // THEME START //
+    #render-text {
+      border-color: set-style($config, $key, text-secondary);
+      color: set-style($config, $key, text-primary);
+      .word.current { background: set-style($config, $key, secondary); }
+    }
+
+    .intro-container svg {
+      fill: set-style($config, $key, text-secondary);
+      &:hover { fill: set-style($config, $key, text-primary); }
+    }
+
+    #your-attempt {
+      background: set-style($config, $key, secondary);
+      border-color: set-style($config, $key, text-secondary);
+    }
+
+    .wrong { color: set-style($config, $key, text-primary); }
+    #toggle-theme {
+      background-color: set-style($config, $key, secondary);
+      .theme-icon { background-image: url(set-style($config, $key, logo)); }
+    }
+
+    .finish-anim::before { background-color: set-style($config, $key, overlay); }
+    .markdown-container {
+      color: set-style($config, $key, text-primary);
+
+      code {
+        background-color: set-style($config, $key, primary);
+        color: set-style($config, $key, text-primary);
+      }
+    }
+    // THEME STOP //
+  }
+}
+
+// Theme button style
+#toggle-theme {
+  border-radius: 0 0 0 75%;
+  cursor: pointer;
+  padding: .4em .4em .75em .75em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999999999;
+
+  .theme-icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36px;
+    transition: background-image 250ms ease-in-out;
+    width: 36px;
+  }
+}
+
+html, body {
+  transition: background 250ms ease-in-out;
+}
+
+// ModestaCSS: light theme //
+html.light-theme, body.light-theme {
+  background: $light-highlight !important;
+  color: $light-text-primary !important;
+}
