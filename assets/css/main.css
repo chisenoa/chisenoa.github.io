@@ -2102,11 +2102,13 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.alizarin-dropshadow:hover, input[type="submit"].alizarin-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(231, 76, 60, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(231, 76, 60, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.alizarin-border, input[type="submit"].alizarin-border {
@@ -2452,11 +2454,13 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.emerald-dropshadow:hover, input[type="submit"].emerald-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.emerald-border, input[type="submit"].emerald-border {
@@ -3157,7 +3161,8 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.sun-flower-dropshadow:hover, input[type="submit"].sun-flower-dropshadow:hover {
@@ -3165,7 +3170,8 @@ button.youtube {
 }
 
 .btn.purple-dropshadow:hover, input[type="submit"].purple-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.sun-flower-border, input[type="submit"].sun-flower-border {
@@ -3414,11 +3420,13 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.discord-dropshadow:hover, input[type="submit"].discord-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.discord-border, input[type="submit"].discord-border {
@@ -3483,11 +3491,13 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.github-dropshadow:hover, input[type="submit"].github-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(41, 45, 50, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(41, 45, 50, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.github-border, input[type="submit"].github-border {
@@ -3966,11 +3976,13 @@ button.youtube {
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
   -moz-transition: filter 350ms ease;
-  -o-transition: filter 350ms ease
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
 }
 
 .btn.twitter-dropshadow:hover, input[type="submit"].twitter-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6)) brightness(50%)
+  filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6)) brightness(50%);
+  border-radius: 5px
 }
 
 .btn.twitter-border, input[type="submit"].twitter-border {
@@ -6123,7 +6135,8 @@ button.youtube {
 
 .alizarin-dropshadow {
   background-color: #e74c3c;
-  filter: drop-shadow(5px 5px 0 rgba(231, 76, 60, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(231, 76, 60, 0.6));
+  border-radius: 5px
 }
 
 .alizarin-paper {
@@ -6656,7 +6669,8 @@ button.youtube {
 
 .emerald-dropshadow {
   background-color: #2ecc71;
-  filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(46, 204, 113, 0.6));
+  border-radius: 5px
 }
 
 .emerald-paper {
@@ -7711,7 +7725,8 @@ button.youtube {
 
 .purple-dropshadow {
   background-color: #9866ff;
-  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6));
+  border-radius: 5px
 }
 
 .sun-flower-paper {
@@ -8096,7 +8111,8 @@ button.youtube {
 
 .discord-dropshadow {
   background-color: #7289da;
-  filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(114, 137, 218, 0.6));
+  border-radius: 5px
 }
 
 .discord-paper {
@@ -8201,7 +8217,8 @@ button.youtube {
 
 .github-dropshadow {
   background-color: #292d32;
-  filter: drop-shadow(5px 5px 0 rgba(41, 45, 50, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(41, 45, 50, 0.6));
+  border-radius: 5px
 }
 
 .github-paper {
@@ -8936,7 +8953,8 @@ button.youtube {
 
 .twitter-dropshadow {
   background-color: #1da1f2;
-  filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6))
+  filter: drop-shadow(5px 5px 0 rgba(29, 161, 242, 0.6));
+  border-radius: 5px
 }
 
 .twitter-paper {
