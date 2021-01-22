@@ -1,8 +1,0 @@
-{
-  "apps": [
-    {
-      "name":"TypingTest",
-      "script":"start.sh"
-    }
-  ]
-}
