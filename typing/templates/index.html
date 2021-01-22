@@ -1,0 +1,67 @@
+<html>
+  <head>
+    {% include "_head.html" %}
+    <title>{{ language['_TYPING_TEST'] }}</title>
+    <meta content="{{ language['emoji'] }}" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="{{ language['emoji'] }}">
+    <meta content="{{ language['_TYPING_TEST'] }}" property="og:title" />
+
+    <meta content="{{ language['_DESCRIPTION'] }}" property="og:description" />
+    <meta content="{{ language['_DESCRIPTION'] }}" name="description" />
+    <meta property="og:locale" content="en_GB" />
+  </head>
+  <body class="github-font-standard {{ theme }}" data-small-screen="{{ language['_SMALL_SCREEN'] }}">
+    {% include "_toggle_theme.html" %}
+    <div class="typing-test-container">
+      <div class="title-container">
+        <a href="/languages" class="flag-emoji tooltip" data-tooltip="{{ language['_SELECT_LANGUAGES'] }}">
+          <img src="{{ language['emoji'] }}">
+        </a>
+        <div class="intro-container">
+          <p class="title">{{ language['_TYPING_TEST'] }}
+            <a href="/about"><svg width="22px" height="22px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></a>
+            <span class="label sun-flower black-text" style="vertical-align: text-top; margin-top: 1.5em;">BETA</span>
+          </p>
+          {% if language["language_code"] != "en-us" %}
+          <p class="undertitle">{{ language['_TRANSLATED_BY'] }} <span class="emerald-text">{{ language['_author'] }}</span></p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="score">
+        <p>{{ language['_SECONDS'] }}: <span id="seconds">60</span></p>
+        <p class="tooltip" data-tooltip="Raw CPM: 0" id="cpm-tp">CPM: <span id="cpm">0</span></p>
+        <p class="tooltip" data-tooltip="Raw WPM: 0" id="wpm-tp">WPM: <span id="wpm">0</span></p>
+        <p>{{ language['_ERRORS'] }}: <span id="errors">0</span></p>
+        <button id="reset">{{ language['_RESET'] }}</button>
+      </div>
+      <div id="render-text" data-finish="{{ language['_FINISH_OVERLAY'] }}"></div>
+      <div id="final-score-container">
+        <h1 id="final-score" data-text="{{ language['_FINAL_FINAL_SCORE'] }}">{{ language['_FINAL_FINAL_SCORE'] }}</h1>
+        <p id="final-text-win" data-text="{{ language['_FINAL_TEXT_WIN'] }}">{{ language['_FINAL_TEXT_WIN'] }}</p>
+        <p id="final-text-fail" data-text="{{ language['_FINAL_TEXT_LOSE'] }}">{{ language['_FINAL_TEXT_LOSE'] }}</p>
+        <p class="emerald-text" id="final-break">{{ language['_FINAL_BREAK'] }}</p>
+      </div>
+      <textarea name="" id="your-attempt" autofocus autocomplete="off" placeholder="{{ language['_START_TEXT'] }}"></textarea>
+
+      <script>
+        window.TranslationData = {
+          FINISH_WORD: "{{ language['_FINISH_WORD'] }}"
+        }
+
+        const speedtest = new WordManager({{ words | safe }}, "render-text")
+        speedtest.pickWords()
+        speedtest.render()
+
+        document.body.addEventListener("click", event => {
+          document.getElementById("your-attempt").focus()
+        })
+
+        document.getElementById("reset").addEventListener("click", event => {
+          speedtest.reset()
+        })
+
+        document.getElementById("your-attempt").addEventListener("keydown", event => speedtest.keydown(event))
+      </script>
+    </div>
+  </body>
+</html>
