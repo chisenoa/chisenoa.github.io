@@ -32,6 +32,10 @@
   background-image: url('../images/projects.png');
 }
 
+.certificates {
+  background-image: url('../images/certificates.png');
+}
+
 .turkey {
   background-image: url('https://twemoji.maxcdn.com/2/svg/1f1f9-1f1f7.svg');
   vertical-align: -.3em;
