@@ -2464,6 +2464,11 @@ button.youtube {
   height: auto
 }
 
+.btn.rose-border, input[type="submit"].rose-border {
+  border: 3px solid #9866ff;
+  height: auto
+}
+
 .btn.energy-drink, input[type="submit"].energy-drink {
   background-color: #c4e538
 }
