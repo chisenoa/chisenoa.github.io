@@ -1,4 +1,5 @@
 function scroll_to(get_id) {
+  // Thanks Bowser65 <3
   let id = get_id.replace("#", "")
   const el = document.getElementById(id)
   el.scrollIntoView({
