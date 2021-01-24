@@ -3,7 +3,7 @@
  * Made by AlexFlipnote (https://alexflipnote.dev)
  * Licensed under GPL-3.0 (https://github.com/AlexFlipnote/Modesta/blob/master/LICENSE)
  */
- 
+
  html, body {
   background: #181818;
   color: #fff;
@@ -2120,8 +2120,24 @@ button.youtube {
   border-radius: 5px
 }
 
+.btn.oreskis-dropshadow, input[type="submit"].oreskis-dropshadow {
+  background-color: #ffa03f;
+  filter: drop-shadow(5px 5px 0 rgba(255, 160, 63, 0.6));
+  transition: filter 350ms ease;
+  -webkit-transition: filter 350ms ease;
+  -ms-transition: filter 350ms ease;
+  -moz-transition: filter 350ms ease;
+  -o-transition: filter 350ms ease;
+  border-radius: 5px
+}
+
 .btn.alizarin-dropshadow:hover, input[type="submit"].alizarin-dropshadow:hover {
   filter: drop-shadow(5px 5px 0 rgba(231, 76, 60, 0.6)) brightness(50%);
+  border-radius: 5px
+}
+
+.btn.oreskis-dropshadow:hover, input[type="submit"].oreskis-dropshadow:hover {
+  filter: drop-shadow(5px 5px 0 rgba(255, 160, 63, 0.6)) brightness(50%);
   border-radius: 5px
 }
 
@@ -3168,9 +3184,9 @@ button.youtube {
   -o-transition: filter 350ms ease
 }
 
-.btn.purple-dropshadow, input[type="submit"].purple-dropshadow {
-  background-color: #9866ff;
-  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6));
+.btn.spooky-dropshadow, input[type="submit"].spooky-dropshadow {
+  background-color: #824cff;
+  filter: drop-shadow(5px 5px 0 rgba(130, 76, 255, 0.6));
   transition: filter 350ms ease;
   -webkit-transition: filter 350ms ease;
   -ms-transition: filter 350ms ease;
@@ -3183,8 +3199,8 @@ button.youtube {
   filter: drop-shadow(5px 5px 0 rgba(241, 196, 15, 0.6)) brightness(50%)
 }
 
-.btn.purple-dropshadow:hover, input[type="submit"].purple-dropshadow:hover {
-  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6)) brightness(50%);
+.btn.spooky-dropshadow:hover, input[type="submit"].spooky-dropshadow:hover {
+  filter: drop-shadow(5px 5px 0 rgba(130, 76, 255, 0.6)) brightness(50%);
   border-radius: 5px
 }
 
@@ -6153,6 +6169,12 @@ button.youtube {
   border-radius: 5px
 }
 
+.oreskis-dropshadow {
+  background-color: #ffa03f;
+  filter: drop-shadow(5px 5px 0 rgba(255, 160, 63, 0.6));
+  border-radius: 5px
+}
+
 .alizarin-paper {
   background: linear-gradient(225deg, transparent 26px, #e74c3c 0) !important
 }
@@ -7737,9 +7759,9 @@ button.youtube {
   filter: drop-shadow(5px 5px 0 rgba(241, 196, 15, 0.6))
 }
 
-.purple-dropshadow {
-  background-color: #9866ff;
-  filter: drop-shadow(5px 5px 0 rgba(152, 102, 255, 0.6));
+.spooky-dropshadow {
+  background-color: #824cff;
+  filter: drop-shadow(5px 5px 0 rgba(130, 76, 255, 0.6));
   border-radius: 5px
 }
 
