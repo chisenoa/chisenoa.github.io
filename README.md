@@ -2,8 +2,6 @@
 - Site: https://chisenoa.github.io
 - Usage: Information about myself
 
-This site proudly uses [ModestaCSS](https://github.com/AlexFlipnote/ModestaCSS) (since [AlexFlipnote](https://www.github.io/AlexFlipnote) made it)
-
 ## Licenses
 This code is under [MIT Lıcense](https://github.com/chisenoa/chisenoa.github.io/blob/master/LICENSE)
 
