@@ -1,0 +1,87 @@
+.rowx {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 40px 0 100px 0;
+}
+
+.portfolio-itemx {
+  margin: 10px 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.portfolio-itemx .hover-bgx {
+  overflow: hidden;
+  position: relative;
+}
+
+.col-md-4, .col-sm-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-sm-6 {
+    float: left;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    float: left;
+  }
+
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+}
+
+.hover-bgx .hover-textx {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #333;
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.hover-bgx .hover-textx .overlay-caption {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.hover-bgx .hover-textx .overlay-caption .overlay-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hover-bgx:hover .hover-textx {
+  opacity: 1;
+}
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
